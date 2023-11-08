@@ -1,6 +1,17 @@
 body {
   font-family: Arial;
   margin: 0;
+  display: grid;
+  grid-template-areas: "header header header header header header"
+                       "navbar main main main main main"
+                       "navbar main main main main main"
+                       "navbar main main main main main"
+                       "navbar main main main main main"
+                       "navbar main main main main main";
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  height: 100vh;
+  gap: 0px 20px;
 }
 
 /* Style the header */
@@ -8,6 +19,7 @@ body {
   background-color: #f1f1f1; /* Light gray background color */
   padding: 20px; /* Add some padding */
   text-align: center; /* Center the text */
+  grid-area: header;
 }
 
 /* Style the header logo */
@@ -38,11 +50,8 @@ body {
 /* Style the navigation bar */
 .navbar {
   background-color: #333; /* Dark background color */
-  height: 100%; /* Full height */
-  width: 160px; /* Set the width of the navigation bar */
-  position: fixed; /* Make it stick to the left */
-  left: 0;
   overflow: auto; /* Enable scrolling if the content is too long */
+  grid-area: navbar;
 }
 
 /* Style the navigation bar links */
@@ -61,8 +70,7 @@ body {
 
 /* Style the content area */
 .content {
-  margin-left: 160px; /* Add some margin to account for the fixed navbar */
-  padding: 20px; /* Add some padding */
+  grid-area: main;
 }
 
 /* Style the heading */
