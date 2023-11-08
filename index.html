@@ -1,103 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        /* Style the body */
-        body {
-            font-family: Arial;
-            margin: 0;
-        }
-
-        /* Style the header */
-        .header {
-            background-color: #f1f1f1; /* Light gray background color */
-            padding: 20px; /* Add some padding */
-            text-align: center; /* Center the text */
-        }
-
-        /* Style the header logo */
-        .header img {
-            width: 100px; /* Set the width of the logo */
-            height: 100px; /* Set the height of the logo */
-            vertical-align: middle; /* Align the logo vertically with the text */
-        }
-
-        /* Style the header title */
-        .header h1 {
-            display: inline-block; /* Display the title inline with the logo */
-            margin-left: 20px; /* Add some margin to the left of the title */
-        }
-
-        /* Style the header links */
-        .header a {
-            color: black; /* Black text color */
-            text-decoration: none; /* Remove underline */
-            margin: 10px; /* Add some margin to the links */
-        }
-
-        /* Change the color of links on hover */
-        .header a:hover {
-            color: blue; /* Blue text color */
-        }
-
-        /* Style the navigation bar */
-        .navbar {
-            background-color: #333; /* Dark background color */
-            height: 100%; /* Full height */
-            width: 160px; /* Set the width of the navigation bar */
-            position: fixed; /* Make it stick to the left */
-            left: 0;
-            overflow: auto; /* Enable scrolling if the content is too long */
-        }
-
-        /* Style the navigation bar links */
-        .navbar a {
-            display: block; /* Make the links take up the entire space */
-            color: white; /* White text color */
-            padding: 16px; /* Add some padding */
-            text-decoration: none; /* Remove underline */
-        }
-
-        /* Change the color of links on hover */
-        .navbar a:hover {
-            background-color: #ddd; /* Light gray background color */
-            color: black; /* Black text color */
-        }
-
-        /* Style the content area */
-        .content {
-            margin-left: 160px; /* Add some margin to account for the fixed navbar */
-            padding: 20px; /* Add some padding */
-        }
-
-        /* Style the heading */
-        .content h1 {
-            text-align: center; /* Center the text */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Intro Wiki</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <!-- Create the header -->
-    <div class="header">
+    <header class="header">
         <img src="logo.png" alt="Logo"> <!-- Add a logo image -->
         <h1>Mini Wiki</h1> <!-- Add a title -->
-        <a href="about.html">About Us</a> <!-- Link to the about page -->
-        <a href="download.html">Download</a> <!-- Link to the download page -->
-    </div>
+        <a href="pages/about.html">About Us</a> <!-- Link to the about page -->
+        <a href="pages/download.html">Download</a> <!-- Link to the download page -->
+    </header>
 
     <!-- Create the navigation bar -->
-    <div class="navbar">
-        <a href="index.html">Home</a> <!-- Link to the main page -->
-        <a href="topic1.html">Topic 1</a> <!-- Link to the first topic page -->
-        <a href="topic2.html">Topic 2</a> <!-- Link to the second topic page -->
-        <a href="topic3.html">Topic 3</a> <!-- Link to the third topic page -->
-        <a href="topic4.html">Topic 4</a> <!-- Link to the fourth topic page -->
-        <a href="topic5.html">Topic 5</a> <!-- Link to the fifth topic page -->
-    </div>
+    <aside class="navbar">
+        <nav>
+            <a href="/">Home</a> <!-- Link to the main page -->
+            <a href="#">Topic 1</a> <!-- Link to the first topic page -->
+            <a href="#">Topic 2</a> <!-- Link to the second topic page -->
+            <a href="#">Topic 3</a> <!-- Link to the third topic page -->
+            <a href="#">Topic 4</a> <!-- Link to the fourth topic page -->
+            <a href="#">Topic 5</a> <!-- Link to the fifth topic page -->
+        </nav>
+    </aside>
 
     <!-- Create the content area -->
-    <div class="content">
+    <main class="content">
         <h1>Welcome to the mini wiki</h1> <!-- Add a heading -->
         <p>This is the main page of the mini wiki. Here you can find some information about a particular topic. You can also navigate to the other pages using the links in the navigation bar.</p> <!-- Add some text -->
-    </div>
+    </main>
 </body>
 </html>
