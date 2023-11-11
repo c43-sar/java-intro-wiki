@@ -45,9 +45,38 @@
         background-color: #04aa6d; /* Green background color */
       }
 
+      /* Style the navigation bar */
+      .navbar {
+        background-color: #333; /* Dark background color */
+        height: 100%; /* Full height */
+        width: 160px; /* Set the width of the navigation bar */
+        position: fixed; /* Make it stick to the left */
+        left: 80px; /* Adjust the position to account for the header */
+        overflow: auto; /* Enable scrolling if the content is too long */
+      }
+
+      /* Style the navigation bar links */
+      .navbar a {
+        display: block; /* Make the links take up the entire space */
+        color: white; /* White text color */
+        padding: 16px; /* Add some padding */
+        text-decoration: none; /* Remove underline */
+      }
+
+      /* Change the color of links on hover */
+      .navbar a:hover {
+        background-color: #ddd; /* Light gray background color */
+        color: black; /* Black text color */
+      }
+
+      /* Style the active topic */
+      .navbar a.active {
+        background-color: #04aa6d; /* Green background color */
+      }
+
       /* Style the content area */
       .content {
-        margin-top: 80px; /* Add some margin to account for the fixed header */
+        margin-left: 240px; /* Add some margin to account for the fixed header and navbar */
         padding: 20px; /* Add some padding */
         display: grid; /* Use grid layout to create columns */
         grid-template-columns: repeat(
@@ -87,6 +116,20 @@
       </div>
     </div>
 
+    <!-- Create the navigation bar -->
+    <div class="navbar">
+      <a href="topic1.html" class="active">Topic 1</a>
+      <!-- Link to the first topic page and make it active -->
+      <a href="topic2.html">Topic 2</a>
+      <!-- Link to the second topic page -->
+      <a href="topic3.html">Topic 3</a>
+      <!-- Link to the third topic page -->
+      <a href="topic4.html">Topic 4</a>
+      <!-- Link to the fourth topic page -->
+      <a href="topic5.html">Topic 5</a>
+      <!-- Link to the fifth topic page -->
+    </div>
+
     <!-- Create the content area -->
     <div class="content">
       <div class="card">
@@ -96,34 +139,7 @@
         <p>Some information about topic 1.</p>
         <!-- Add some text -->
       </div>
-      <div class="card">
-        <!-- Create another card -->
-        <h3>Topic 2</h3>
-        <!-- Add a title -->
-        <p>Some information about topic 2.</p>
-        <!-- Add some text -->
-      </div>
-      <div class="card">
-        <!-- Create another card -->
-        <h3>Topic 3</h3>
-        <!-- Add a title -->
-        <p>Some information about topic 3.</p>
-        <!-- Add some text -->
-      </div>
-      <div class="card">
-        <!-- Create another card -->
-        <h3>Topic 4</h3>
-        <!-- Add a title -->
-        <p>Some information about topic 4.</p>
-        <!-- Add some text -->
-      </div>
-      <div class="card">
-        <!-- Create another card -->
-        <h3>Topic 5</h3>
-        <!-- Add a title -->
-        <p>Some information about topic 5.</p>
-        <!-- Add some text -->
-      </div>
+      <!-- Add more cards for the other topics if needed -->
     </div>
   </body>
 </html>
