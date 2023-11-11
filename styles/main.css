@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
   display: grid;
   grid-template-areas: "header header header header header header"
@@ -15,13 +15,25 @@ body {
 }
 
 /* Style the header */
-.header {
+/* .header {
   background-color: #f1f1f1; /* Light gray background color */
-  padding: 20px; /* Add some padding */
-  text-align: center; /* Center the text */
-  grid-area: header;
-}
+  /* padding: 20px; /* Add some padding */
+  /* text-align: center; Center the text */
+  /* grid-area: header; */
+/* } */
 
+.header {
+  background-color: #333; /* Dark background color */
+  padding: 20px; /* Add some padding */
+  height: 80px; /* Set the height of the header */
+  width: 100%; /* Set the width of the header */
+  position: fixed; /* Make it stick to the top */
+  top: 0;
+  grid-area: header;
+  display: flex; /* Use flexbox to align the items */
+  align-items: center; /* Center the items vertically */
+  justify-content: space-between; /* Distribute the items evenly */
+}
 
 /* Style the header logo */
 .header img {
