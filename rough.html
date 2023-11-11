@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <style>
+      /* Style the body */
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      /* Style the header */
+      .header {
+        background-color: #333; /* Dark background color */
+        height: 100%; /* Full height */
+        width: 80px; /* Set the width of the header */
+        position: fixed; /* Make it stick to the left */
+        left: 0;
+        overflow: auto; /* Enable scrolling if the header has too much content */
+        display: flex; /* Use flexbox to align the items */
+        flex-direction: column; /* Arrange the items vertically */
+        align-items: center; /* Center the items horizontally */
+        justify-content: space-between; /* Distribute the items evenly */
+      }
+
+      /* Style the header logo */
+      .header img {
+        width: 50px; /* Set the width of the logo */
+        height: 50px; /* Set the height of the logo */
+        margin: 10px; /* Add some margin to the logo */
+      }
+
+      /* Style the header links */
+      .header a {
+        display: block; /* Make the links take up the entire space */
+        color: white; /* White text color */
+        padding: 10px; /* Add some padding */
+        text-decoration: none; /* Remove underline */
+        transform: rotate(
+          -90deg
+        ); /* Rotate the links 90 degrees counter-clockwise */
+        transform-origin: top right; /* Set the origin of rotation to the top right corner */
+      }
+
+      /* Change the color of links on hover */
+      .header a:hover {
+        background-color: #ddd; /* Light gray background color */
+        color: black; /* Black text color */
+      }
+
+      /* Style the content area */
+      .content {
+        margin-left: 80px; /* Add some margin to account for the fixed header */
+        padding: 20px; /* Add some padding */
+        display: grid; /* Use grid layout to create columns */
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(300px, 1fr)
+        ); /* Make the columns responsive */
+        grid-gap: 20px; /* Add some gap between the columns */
+      }
+
+      /* Style the content cards */
+      .card {
+        background-color: #f1f1f1; /* Light gray background color */
+        border: 1px solid #ccc; /* Add a border */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add some shadow */
+        padding: 16px; /* Add some padding */
+      }
+
+      /* Style the card titles */
+      .card h3 {
+        text-align: center; /* Center the text */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Create the header -->
+    <div class="header">
+      <img src="logo.png" alt="Logo" />
+      <!-- Add a logo image -->
+      <a href="index.html">Home</a>
+      <!-- Link to the main page -->
+      <a href="about.html">About Us</a>
+      <!-- Link to the about page -->
+      <a href="download.html">Download</a>
+      <!-- Link to the download page -->
+    </div>
+
+    <!-- Create the content area -->
+    <div class="content">
+      <div class="card">
+        <!-- Create a card -->
+        <h3>Topic 1</h3>
+        <!-- Add a title -->
+        <p>Some information about topic 1.</p>
+        <!-- Add some text -->
+      </div>
+      <div class="card">
+        <!-- Create another card -->
+        <h3>Topic 2</h3>
+        <!-- Add a title -->
+        <p>Some information about topic 2.</p>
+        <!-- Add some text -->
+      </div>
+      <div class="card">
+        <!-- Create another card -->
+        <h3>Topic 3</h3>
+        <!-- Add a title -->
+        <p>Some information about topic 3.</p>
+        <!-- Add some text -->
+      </div>
+      <div class="card">
+        <!-- Create another card -->
+        <h3>Topic 4</h3>
+        <!-- Add a title -->
+        <p>Some information about topic 4.</p>
+        <!-- Add some text -->
+      </div>
+      <div class="card">
+        <!-- Create another card -->
+        <h3>Topic 5</h3>
+        <!-- Add a title -->
+        <p>Some information about topic 5.</p>
+        <!-- Add some text -->
+      </div>
+    </div>
+  </body>
+</html>
