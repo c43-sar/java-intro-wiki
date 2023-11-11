@@ -22,17 +22,24 @@ body {
   grid-area: header;
 }
 
+
 /* Style the header logo */
 .header img {
-  width: 100px; /* Set the width of the logo */
   height: 100px; /* Set the height of the logo */
   vertical-align: middle; /* Align the logo vertically with the text */
+  width: max(100px, 18vw); /* Set the width of the logo */
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
 }
 
 /* Style the header title */
 .header h1 {
   display: inline-block; /* Display the title inline with the logo */
   margin-left: 20px; /* Add some margin to the left of the title */
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+  text-align: center;
 }
 
 /* Style the header links */
@@ -44,7 +51,7 @@ body {
 
 /* Change the color of links on hover */
 .header a:hover {
-  color: blue; /* Blue text color */
+  color: brown; /* Blue text color */
 }
 
 /* Style the navigation bar */
