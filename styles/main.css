@@ -25,7 +25,7 @@ body {
 .header {
   background-color: #333; /* Dark background color */
   padding: 20px; /* Add some padding */
-  height: 80px; /* Set the height of the header */
+  height: 20px; /* Set the height of the header */
   width: 100%; /* Set the width of the header */
   position: fixed; /* Make it stick to the top */
   top: 0;
@@ -33,16 +33,6 @@ body {
   display: flex; /* Use flexbox to align the items */
   align-items: center; /* Center the items vertically */
   justify-content: space-between; /* Distribute the items evenly */
-}
-
-/* Style the header logo */
-.header img {
-  height: 100px; /* Set the height of the logo */
-  vertical-align: middle; /* Align the logo vertically with the text */
-  width: max(100px, 18vw); /* Set the width of the logo */
-  background-color: #0a0a23;
-  aspect-ratio: 35 / 4;
-  padding: 0.4rem;
 }
 
 /* Style the header title */
@@ -54,16 +44,34 @@ body {
   text-align: center;
 }
 
+.header img {
+  width: 50px; /* Set the width of the logo */
+  height: 50px; /* Set the height of the logo */
+  margin: 15px; /* Add some margin to the logo */
+  /* height: 100px; /* Set the height of the logo */
+  vertical-align: middle; /* Align the logo vertically with the text */
+  /*width: max(100px, 18vw); /* Set the width of the logo */
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
 /* Style the header links */
 .header a {
-  color: black; /* Black text color */
+  display: inline-block; /* Display the links inline */
+  color: white; /* White text color */
+  /*padding: 20px; /* Add some padding */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 23px;
   text-decoration: none; /* Remove underline */
-  margin: 10px; /* Add some margin to the links */
 }
 
 /* Change the color of links on hover */
 .header a:hover {
-  color: brown; /* Blue text color */
+  background-color: #ddd; /* Light gray background color */
+  color: black; /* Black text color */
 }
 
 /* Style the navigation bar */
