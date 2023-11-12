@@ -30,11 +30,11 @@ body {
 .header {
   background-color: #333; /* Dark background color */
   /*padding: 20px; /* Add some padding */
-  /*height: 20px; /* Set the height of the header */
+  /*height: 60px; /* Set the height of the header */
   width: 100%; /* Set the width of the header */
-  position: fixed; /* Make it stick to the top */
-  top: 0;
-  grid-area: 'header', 'header', 'main', 'header';
+  /*position: fixed; /* Make it stick to the top */
+  /* top: 0;*/
+  grid-area: header;
   display: flex; /* Use flexbox to align the items */
   align-items: center; /* Center the items vertically */
   justify-content: space-between; /* Distribute the items evenly */
@@ -44,8 +44,9 @@ body {
 .header h1 {
   display: inline-block; /* Display the title inline with the logo */
   margin-left: 20px; /* Add some margin to the left of the title */
-  color: #f1be32;
-  font-size: min(5vw, 1.2em);
+  color: #e8e4d9;
+  /*font-size: min(5vw, 1.2em);*/
+  font-size: x-large;
   text-align: center;
 }
 
