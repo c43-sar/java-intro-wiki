@@ -133,3 +133,9 @@ body {
   border: 1px solid black;
   margin: 15px;
 }
+
+.adBox img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
