@@ -78,6 +78,14 @@ body {
   color: black; /* Black text color */
 }
 
+.logo-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+
+
+}
+
 .links {
   margin-right: 15px;
 }
