@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -12,6 +12,8 @@ body {
   grid-auto-columns: 1fr;
   height: 100vh;
   gap: 0px 20px;
+  background-color: rgb(60, 60, 60);
+  color: beige;
 }
 
 /* Style the header */
@@ -58,7 +60,7 @@ body {
   /* height: 100px; /* Set the height of the logo */
   vertical-align: middle; /* Align the logo vertically with the text */
   /*width: max(100px, 18vw); /* Set the width of the logo */
-  background-color: inherit;
+  background-color: beige;
   aspect-ratio: 35 / 4;
   padding: 0.2rem;
 }
@@ -74,7 +76,7 @@ body {
 
 /* Change the color of links on hover */
 .header a:hover {
-  background-color: #ddd; /* Light gray background color */
+  background-color: beige; /* Light gray background color */
   color: black; /* Black text color */
 }
 
@@ -102,12 +104,12 @@ body {
 
 /* Style the content area */
 .content {
-  font-family: 'IBM Plex Serif', serif !important;
+  font-family: 'Inter', sans-serif !important;
   grid-area: main;
 }
 
 /* Style the heading */
 .content h1 {
-  font-family: 'EB Garamond', serif !important;
+  font-family: 'IBM Plex Serif', serif !important;
   text-align: center; /* Center the text */
 }
