@@ -5,8 +5,8 @@ body {
   font-weight: 400;
   margin: 0;
   display: grid;
-  grid-template-areas: "header header header header header header"
-                       "navbar main main main main main";
+  grid-template-areas: "header header header header header header header"
+                       "navbar main main main main main ad";
   grid-template-rows: 80px 5fr;
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
@@ -45,8 +45,6 @@ body {
 
 /* Style the header title */
 .header h1 {
-  display: inline-block; /* Display the title inline with the logo */
-  margin-left: 20px; /* Add some margin to the left of the title */
   color: #e8e4d9;
   /*font-size: min(5vw, 1.2em);*/
   font-size: x-large;
@@ -78,6 +76,18 @@ body {
 .header a:hover {
   background-color: beige; /* Light gray background color */
   color: black; /* Black text color */
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+
+
+}
+
+.links {
+  margin-right: 15px;
 }
 
 /* Style the navigation bar */
@@ -112,4 +122,14 @@ body {
 .content h1 {
   font-family: 'IBM Plex Serif', serif !important;
   text-align: center; /* Center the text */
+}
+
+.advertisement {
+  grid-area: ad;
+  display: grid;
+}
+
+.adBox {
+  border: 1px solid black;
+  margin: 15px;
 }
