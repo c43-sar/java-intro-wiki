@@ -3,11 +3,8 @@ body {
   margin: 0;
   display: grid;
   grid-template-areas: "header header header header header header"
-                       "navbar main main main main main"
-                       "navbar main main main main main"
-                       "navbar main main main main main"
-                       "navbar main main main main main"
                        "navbar main main main main main";
+  grid-template-rows: 80px 5fr;
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
   height: 100vh;
