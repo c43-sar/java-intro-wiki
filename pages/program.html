@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif&family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/syntaxHighlighting.css">
 </head>
 <body>
     <!-- Create the header -->
@@ -42,9 +43,44 @@
 
     <!-- Create the content area -->
     <main class="content">
-        <h1>Welcome to the mini wiki</h1> <!-- Add a heading -->
-        <p>This is the main page of the mini wiki. Here you can find some information about a particular topic. You can also navigate to the other pages using the links in the navigation bar.</p> <!-- Add some text -->
-        <p>Website by Soumyajit Kolay and Saurav Kumar.</p>
+        <h1>Hello World!</h1>
+        <section>
+        <h2>Writing a Simple Java Program</h2>
+        <ol>
+            <li><strong>Choose a Text Editor or an Integrated Development Environment (IDE):</strong> You can use a text editor like Notepad, Sublime Text, or an IDE like Eclipse, IntelliJ IDEA, or NetBeans.</li>
+            <li><strong>Write the Java Code:</strong> Create a new file with a .java extension, let's say SimpleProgram.java.</li>
+            <li><strong>Open the File and Write Your Java Code:</strong> For example, a basic "Hello, World!" program:
+<pre>
+<span class="syntax-keyword">public class</span> <span class="syntax-class">SimpleProgram</span> {
+    <span class="syntax-keyword">public static</span> <span class="syntax-class">void</span> <span class="syntax-function">main</span>() {
+        <span class="syntax-class">System</span>.<span class="syntax-identifier">out</span>.<span class="syntax-function">println</span>(<span class="syntax-constant">"Hello, World"</span>);
+    }
+}</pre>
+            </li>
+            <li>
+                <strong>Save the File:</strong> Save the file with the same name as the class (in this case, SimpleProgram.java).
+            </li>
+        </ol>
+        </section>
+        <section>
+            <h2>Compiling a Program</h2>
+            <ol>
+                <li><strong>Open a Command Prompt / Terminal:</strong> Navigate to the directory where your Java file is located.</li>
+                <li><strong>Use the Java Compiler (javac):</strong> Compile the Java file using the Java compiler (javac). Run the command:
+                    <pre>javac SimpleProgram.java</pre>
+                    If there are no syntax errors, this will generate a SimpleProgram.class file.
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Executing the Program</h2>
+            <ol>
+                <li><strong>Run the Java Program using the Java Virtual Machine (JVM)</strong> Once the file is compiled, execute it with the Java interpreter (java):
+                    <pre>java SimpleProgram</pre>
+                    If everything goes well, this should display "Hello, World!" in the terminal or command prompt.
+                </li>
+            </ol>
+        </section>
     </main>
 
     <aside class="linkBox">

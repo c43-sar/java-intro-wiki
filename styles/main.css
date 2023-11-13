@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono&family=JetBrains+Mono&display=swap');
 
 body {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -116,6 +116,7 @@ body {
 .content {
   font-family: 'Inter', sans-serif !important;
   grid-area: main;
+  overflow-y: scroll;
 }
 
 /* Style the heading */
@@ -167,3 +168,33 @@ body {
     zoom: 1;
   }
 }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Mono', Menlo, Courier, monospace;
+}
+
+li {
+  margin: 1em;
+}
+
+/* Style the pre tag in dark mode */
+pre {
+  padding: 1em;
+  background-color: #333; /* Dark background color */
+  color: #dddddd; /* Light text color */
+  border-radius: 0.3em;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
+}
+
+/* Style the code tag inside the pre for dark mode */
+pre code {
+  font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
+  color: #fff; /* Light text color */
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+

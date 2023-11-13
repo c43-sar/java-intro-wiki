@@ -1,0 +1,27 @@
+.syntax-keyword {
+  color: #c678dd;
+}
+
+.syntax-function {
+  color: #61afef;
+}
+
+.syntax-identifier {
+  color: #e06c75;
+}
+
+.syntax-int-literal {
+  color: #d19a66;
+}
+
+.syntax-constant {
+  color: #98c379;
+}
+
+.syntax-comment{
+  color: #7f848e
+}
+
+.syntax-class {
+  color: #e5c07b;
+}
