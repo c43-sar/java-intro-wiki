@@ -116,6 +116,7 @@ body {
 .content {
   font-family: 'Inter', sans-serif !important;
   grid-area: main;
+  overflow-y: scroll;
 }
 
 /* Style the heading */
@@ -172,11 +173,15 @@ h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Mono', Menlo, Courier, monospace;
 }
 
+li {
+  margin: 1em;
+}
+
 /* Style the pre tag in dark mode */
 pre {
   padding: 1em;
   background-color: #333; /* Dark background color */
-  color: #fff; /* Light text color */
+  color: #dddddd; /* Light text color */
   border-radius: 0.3em;
   overflow-x: auto;
   font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
@@ -186,6 +191,10 @@ pre {
 pre code {
   font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
   color: #fff; /* Light text color */
+}
+
+section {
+  margin: 0.5em;
 }
 
 
