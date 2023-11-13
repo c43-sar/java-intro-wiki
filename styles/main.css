@@ -129,7 +129,7 @@ body {
   display: grid;
 }
 
-.adBox {
+.prBox {
   border: 1px solid black;
   margin: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
