@@ -1,67 +1,374 @@
+<!-- 
+  Author - Garv
+ -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Java Intro Wiki</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif&family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+      integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Serif&family=Montserrat&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
     <!-- Create the header -->
     <header class="header">
-        <div class="logo-container">
-            <img src="../logo.png" alt="Logo"> <!-- Add a logo image -->
-            <h1>Java Info Wiki</h1> <!-- Add a title -->
-        </div>
-        <div class="links">
-            <a href="about.html">About Us</a> <!-- Link to the about page -->
-            <a href="https://github.com/c43-sar/java-intro-wiki">
-                <i class="fa-brands fa-github"></i>
-                GitHub
-            </a> <!-- Link to the download page -->
-        </div>
+      <div class="logo-container">
+        <img src="../logo.png" alt="Logo" />
+        <!-- Add a logo image -->
+        <h1>Java Info Wiki</h1>
+        <!-- Add a title -->
+      </div>
+      <div class="links">
+        <a href="about.html">About Us</a>
+        <!-- Link to the about page -->
+        <a href="https://github.com/c43-sar/java-intro-wiki">
+          <i class="fa-brands fa-github"></i>
+          GitHub
+        </a>
+        <!-- Link to the download page -->
+      </div>
     </header>
 
     <!-- Create the navigation bar -->
     <aside class="navbar">
-        <nav>
-            <a href="../index.html">Home</a> <!-- Link to the main page -->
-            <a href="../pages/intro.html">Introduction</a> <!-- Link to the first topic page -->
-            <a class="active">JVM, JRE, JDK</a> <!-- Link to the second topic page -->
-            <a href="../pages/char.html">Characteristics</a> <!-- Link to the third topic page -->
-            <a href="../pages/OOP.html">OOP Principles</a> <!-- Link to the fourth topic page -->
-            <a href="../pages/program.html">Hello, World!</a> <!-- Link to the fifth topic page -->
-        </nav>
+      <nav>
+        <a href="../index.html">Home</a>
+        <!-- Link to the main page -->
+        <a href="../pages/intro.html">Introduction</a>
+        <!-- Link to the first topic page -->
+        <a class="active">JVM, JRE, JDK</a>
+        <!-- Link to the second topic page -->
+        <a href="../pages/char.html">Characteristics</a>
+        <!-- Link to the third topic page -->
+        <a href="../pages/OOP.html">OOP Principles</a>
+        <!-- Link to the fourth topic page -->
+        <a href="../pages/program.html">Hello, World!</a>
+        <!-- Link to the fifth topic page -->
+      </nav>
     </aside>
 
     <!-- Create the content area -->
     <main class="content">
-        <h1>Welcome to the mini wiki</h1> <!-- Add a heading -->
-        <p>This is the main page of the mini wiki. Here you can find some information about a particular topic. You can also navigate to the other pages using the links in the navigation bar.</p> <!-- Add some text -->
-        <p>Website by Soumyajit Kolay and Saurav Kumar.</p>
+      <section>
+        <h2>JAVA VIRTUAL MACHINE (JVM)</h2>
+        <p>
+          A Java virtual machine (JVM) is a virtual machine that enables a
+          computer to run Java programs as well as programs written in other
+          languages that are also compiled to Java bytecode. The JVM is detailed
+          by a specification that formally describes what is required in a JVM
+          implementation. Having a specification ensures interoperability of
+          Java programs across different implementations so that program authors
+          using the Java Development Kit (JDK) need not worry about
+          idiosyncrasies of the underlying hardware platform.<\p>
+        </p>
+
+        <p>
+          The Java Virtual Machine (JVM) is a crucial component of the Java
+          Runtime Environment (JRE) and the Java Development Kit (JDK). It plays
+          a central role in the execution of Java programs.Here are key aspects
+          of the Java Virtual Machine:
+        </p>
+        <h3>1.Platform Independence:</h3>
+        <p>
+          One of the primary goals of Java is platform independence. Java source
+          code is compiled into an intermediate form called bytecode. The JVM
+          then interprets and executes this bytecode on different platforms,
+          allowing Java programs to run on any device that has a compatible JVM.
+        </p>
+        <h3>2.Execution of Bytecode:</h3>
+        <p>
+          Java source code is compiled into bytecode by the Java compiler. This
+          bytecode is a set of instructions that the JVM can understand. The JVM
+          executes these bytecode instructions, making it possible to run Java
+          programs on any device with a JVM implementation.
+        </p>
+        <h3>3.Just-In-Time (JIT) Compilation:</h3>
+        <p>
+          The JVM uses a Just-In-Time compiler to translate bytecode into native
+          machine code at runtime. This improves the performance of Java
+          applications by allowing them to take advantage of the specific
+          characteristics of the underlying hardware.
+        </p>
+        <h3>4.Memory Management:</h3>
+        <p>
+          The JVM is responsible for managing memory, including the allocation
+          and deallocation of memory resources. It uses garbage collection to
+          automatically reclaim memory occupied by objects that are no longer
+          reachable or in use.
+        </p>
+        <h3>5.Security:</h3>
+        <p>
+          The JVM provides a secure environment for executing Java applications.
+          It includes features like bytecode verification to ensure that code
+          loaded into the JVM adheres to the Java language specifications. This
+          helps prevent malicious code from causing harm.
+        </p>
+        <h3>6.Monitoring and Management:</h3>
+        <p>
+          The JVM provides tools and APIs for monitoring and managing the
+          performance of Java applications. Tools like JConsole and VisualVM can
+          be used to analyze memory usage, thread activity, and other aspects of
+          program behavior.
+        </p>
+      </section>
+
+      <section>
+        <h2>JAVA DEVELOPMENT KIT (JDK)</h2>
+        <p>
+          The Java Development Kit (JDK) is a software development kit used for
+          developing Java applications. It provides tools and libraries
+          necessary for developing, debugging, and monitoring Java applications.
+          The JDK includes the Java Runtime Environment (JRE), which is
+          essential for running Java programs, and additional tools for
+          compiling and debugging code. Here are the key components and features
+          of the JDK:
+        </p>
+
+        <h3>Java Compiler (javac):</h3>
+
+        <p>
+          The Java compiler is a tool included in the JDK that translates Java
+          source code (.java files) into bytecode (.class files), which can be
+          executed by the Java Virtual Machine (JVM). The compiled bytecode is
+          platform-independent, allowing it to run on any device with a
+          compatible JVM.
+        </p>
+
+        <h3>Java Virtual Machine (JVM):</h3>
+        <p>
+          The JDK includes a JVM for running Java applications. The JVM is
+          responsible for interpreting or compiling bytecode into native machine
+          code and executing Java programs. It provides a runtime environment
+          that supports features like memory management, garbage collection, and
+          multithreading.
+        </p>
+
+        <h3>Java Runtime Environment (JRE):</h3>
+        <p>
+          The JRE is a subset of the JDK and includes the JVM, libraries, and
+          other components needed to run Java applications. While end-users
+          typically only need the JRE to run Java programs, developers use the
+          full JDK for software development.
+        </p>
+
+        <h3>Java API Libraries:</h3>
+        <p>
+          The JDK includes a vast set of standard Java API libraries that
+          provide pre-built functionality for common tasks, such as working with
+          data structures, networking, I/O, and user interfaces. These libraries
+          simplify development and help ensure consistency across Java
+          applications.
+        </p>
+
+        <h3>Development Tools:</h3>
+        <p>
+          The JDK includes various development tools to aid programmers in
+          creating, debugging, and profiling Java applications. Some of these
+          tools include:
+        </p>
+        <ul>
+          <li>
+            <h4>javac:</h4>
+            <p>Java compiler</p>
+          </li>
+          <li>
+            <h4>java:</h4>
+            <p>Java interpreter</p>
+          </li>
+          <li>
+            <h4>javadoc:</h4>
+            <p>Documentation generator</p>
+          </li>
+          <li>
+            <h4>javap:</h4>
+            <p>Class file disassembler</p>
+          </li>
+          <li>
+            <h4>jdb:</h4>
+            <p>Debugger</p>
+          </li>
+          <li>
+            <h4>jps:</h4>
+            <p>Java Virtual Machine Process Status Tool</p>
+          </li>
+          <li>
+            <h4>jstack:</h4>
+            <p>Java Stack Trace tool</p>
+          </li>
+          <li>
+            <h3>JavaFX:</h3>
+          </li>
+        </ul>
+        <p>
+          In earlier versions of the JDK, JavaFX, a platform for building rich
+          internet applications, was included as part of the JDK. However,
+          starting with Java 11, JavaFX is no longer bundled with the JDK but is
+          available as a separate download.
+        </p>
+        <h3>Java Mission Control (JMC) and Java Flight Recorder (JFR):</h3>
+        <p>
+          These tools, introduced in later versions of the JDK, provide advanced
+          monitoring, profiling, and diagnostics capabilities for Java
+          applications. Java Mission Control allows developers to analyze the
+          performance and behavior of Java applications.
+        </p>
+
+        <h3>Java Native Interface (JNI):</h3>
+        <p>
+          The JDK includes tools and libraries for integrating Java applications
+          with native code written in languages like C and C++. JNI allows Java
+          code to call functions written in native code and vice versa.
+        </p>
+        <h3>Java Development Kit (JDK) Releases:</h3>
+        <p>
+          The JDK is regularly updated with new features, improvements, and bug
+          fixes. Developers can download and install different versions of the
+          JDK to take advantage of the latest enhancements and ensure
+          compatibility with their applications. When developing Java
+          applications, developers typically use the JDK to write, compile, and
+          test their code. Once the application is ready for deployment,
+          end-users typically only need the JRE to run the compiled Java
+          bytecode.
+        </p>
+      </section>
+      <section>
+        <h2>THE JAVA RUNTIME ENVIRONMENT (JRE)</h2>
+
+        <p>
+          The Java Runtime Environment (JRE) is a set of software tools used for
+          running Java applications. It includes the Java Virtual Machine (JVM),
+          class libraries, and other supporting files needed for the execution
+          of Java programs. Unlike the Java Development Kit (JDK), which is
+          geared towards Java application development, the JRE is designed for
+          end-users who only need to run Java applications on their machines.
+          Here are key components and features of the JRE:
+        </p>
+
+        <h3>Java Virtual Machine (JVM):</h3>
+        <p>
+          The JVM is an integral part of the JRE. It interprets or compiles Java
+          bytecode into native machine code and executes Java applications. The
+          JVM provides a runtime environment with features like memory
+          management, garbage collection, and multithreading.
+        </p>
+
+        <h3>Class Libraries:</h3>
+        <p>
+          The JRE includes a set of class libraries that provide essential
+          functionality to Java applications. These libraries contain pre-built
+          classes and methods for common tasks, such as working with data
+          structures, networking, I/O operations, and user interfaces.
+        </p>
+
+        <h3>Java Application Launcher (java):</h3>
+        <p>
+          The JRE includes the Java Application Launcher, which is used to
+          launch and run Java applications. Users can execute Java applications
+          by running Java bytecode files (typically with a .class extension)
+          from the command line or by double-clicking on Java application JAR
+          (Java Archive) files.
+        </p>
+        <h3>Java Plugin (Deprecated):</h3>
+        <p>
+          In older versions of the JRE, a Java browser plugin was included to
+          enable the execution of Java applets within web browsers. However, due
+          to security concerns and changes in web technology, most modern
+          browsers no longer support Java applets, and the Java plugin has been
+          deprecated.
+        </p>
+        <h3>Security Components:</h3>
+        <p>
+          The JRE includes security components to help protect users from
+          potentially harmful Java applications. These components include the
+          Java Security Manager, which enforces a set of security policies, and
+          features like code signing, which allows developers to sign their Java
+          applications to establish their authenticity.
+        </p>
+        <h3>Java Web Start (Deprecated):</h3>
+        <p>
+          Java Web Start was a technology included in the JRE that allowed users
+          to launch Java applications directly from the web. Similar to the Java
+          browser plugin, Java Web Start has been deprecated due to security
+          concerns, and support for it has been removed from recent Java
+          releases.
+        </p>
+        <h3>JavaFX (Optional):</h3>
+        <p>
+          In earlier versions of the JRE, JavaFX, a platform for building rich
+          internet applications, was included. However, starting with Java 11,
+          JavaFX is no longer bundled with the JRE but is available as a
+          separate download.
+        </p>
+        <h3>Automatic Updates:</h3>
+        <p>
+          The JRE can include mechanisms for automatic updates, ensuring that
+          users have the latest security patches and bug fixes. Users may
+          configure their systems to receive updates automatically or manually
+          check for updates.
+        </p>
+        <p>
+          End-users typically install the JRE on their machines if they want to
+          run Java applications but do not need the tools and components
+          provided by the full JDK for development purposes. It provides a
+          runtime environment that allows Java programs to be executed on a
+          user's system in a platform-independent manner.
+        </p>
+      </section>
     </main>
 
     <aside class="linkBox">
-        <div class="prBox">
-            <a href="https://link-hub.net/1027728/download-jdk-for-free" target="_blank"><img src="../res/info1.png"></a>
-            <br>
-            <a href="https://direct-link.net/1027728/eclipse-ide" target="_blank"><img src="../res/info2.png"></a>
-            <br>
-            <a href="https://github.com/opensearch-project/OpenSearch" target="_blank"><img src="../res/info3.png"></a>
-            Promotional Links:
-            <br>
-            <a href="https://tinyurl.com/murt8n94" target="_blank"><img src="../res/adv2.png"></a>
-            <br>
-            <a href="https://tinyurl.com/5cscb4pd" target="_blank"><img src="../res/adv1.png"></a>
-            <br>
-            <a href="https://tinyurl.com/43ys5a42" target="_blank"><img src="../res/adv3.png"></a>
-        </div>
+      <div class="prBox">
+        <a
+          href="https://link-hub.net/1027728/download-jdk-for-free"
+          target="_blank"
+          ><img src="../res/info1.png"
+        /></a>
+        <br />
+        <a href="https://direct-link.net/1027728/eclipse-ide" target="_blank"
+          ><img src="../res/info2.png"
+        /></a>
+        <br />
+        <a
+          href="https://github.com/opensearch-project/OpenSearch"
+          target="_blank"
+          ><img src="../res/info3.png"
+        /></a>
+        Promotional Links:
+        <br />
+        <a href="https://tinyurl.com/murt8n94" target="_blank"
+          ><img src="../res/adv2.png"
+        /></a>
+        <br />
+        <a href="https://tinyurl.com/5cscb4pd" target="_blank"
+          ><img src="../res/adv1.png"
+        /></a>
+        <br />
+        <a href="https://tinyurl.com/43ys5a42" target="_blank"
+          ><img src="../res/adv3.png"
+        /></a>
+      </div>
     </aside>
-</body>
+  </body>
 </html>

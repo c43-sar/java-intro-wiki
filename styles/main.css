@@ -116,7 +116,6 @@ body {
 .content {
   font-family: 'Inter', sans-serif !important;
   grid-area: main;
-  overflow-y: scroll;
 }
 
 /* Style the heading */
