@@ -114,13 +114,13 @@ body {
 
 /* Style the content area */
 .content {
-  font-family: 'Inter', sans-serif !important;
+  font-family: 'Inter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   grid-area: main;
 }
 
 /* Style the heading */
 .content h1 {
-  font-family: 'IBM Plex Serif', serif !important;
+  font-family: 'IBM Plex Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   text-align: center; /* Center the text */
 }
 
@@ -132,7 +132,7 @@ body {
 .prBox {
   border: 1px solid black;
   margin: 15px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   font-size: x-small;
 }
 
@@ -171,7 +171,7 @@ body {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'IBM Plex Mono', Menlo, Courier, monospace;
+  font-family: 'IBM Plex Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
 li {
@@ -185,12 +185,12 @@ pre {
   color: #dddddd; /* Light text color */
   border-radius: 0.3em;
   overflow-x: auto;
-  font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
+  font-family: 'IBM Plex Mono', Menlo, Courier, monospace;
 }
 
 /* Style the code tag inside the pre for dark mode */
 pre code {
-  font-family: 'JetBrains Mono','IBM Plex Mono', Courier, monospace;
+  font-family: 'IBM Plex Mono', Menlo, Courier, monospace;
   color: #fff; /* Light text color */
 }
 
