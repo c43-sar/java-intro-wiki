@@ -52,6 +52,10 @@ body {
   text-align: center;
 }
 
+.header a {
+  text-decoration: none; /* Remove underline */
+}
+
 .header img {
   width: 50px; /* Set the width of the logo */
   height: 50px; /* Set the height of the logo */
