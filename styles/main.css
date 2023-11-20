@@ -26,7 +26,7 @@ body {
 
 .active {
   background-color: lightsteelblue; /* Light gray background color */
-  color: black !important; /* Black text color */
+  color: black; /* Black text color */
   font-weight: 700 !important;
 }
 
@@ -154,6 +154,8 @@ body {
   height: 200px;
   border: 0px;
   zoom: 0.8;
+  transform: scale(0.8);
+  transform-origin: 0 0;
   -moz-transform: scale(0.8);
   -moz-transform-origin: 0 0;
   -o-transform: scale(0.8);
