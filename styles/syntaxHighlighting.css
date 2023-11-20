@@ -1,5 +1,5 @@
 .syntax-keyword {
-  color: #c678dd;
+  color: #f9a3c5;
 }
 
 .syntax-function {
@@ -18,8 +18,8 @@
   color: #98c379;
 }
 
-.syntax-comment{
-  color: #7f848e
+.syntax-comment {
+  color: #7f848e;
 }
 
 .syntax-class {

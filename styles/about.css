@@ -1,9 +1,9 @@
-body{
-  grid-template-areas: "header header header header header header"
-                       ". main main main main .";
-  justify-items: stretch;  
+body {
+  grid-template-areas:
+    "header header header header header header"
+    ". main main main main .";
+  justify-items: stretch;
 }
-
 
 .card-grid {
   display: flex;
@@ -38,4 +38,3 @@ body{
 .user-image {
   font-size: 12rem;
 }
-
